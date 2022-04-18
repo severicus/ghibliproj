@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:400,700"
+      rel="stylesheet"
+    />
+    <title>Studi Ghibli Film</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+        <h1>Studio Ghibli Collection</h1>
+      </a>
+      <ul>
+        <a href="https://ghiblicollection.com/about" target="_blank">
+          <li>About Ghibli</li>
+        </a>
+      </ul>
+    </nav>
+    <main>
+      <section class="title-info hidden">
+        <h2 id="title"></h2>
+        <h3 id="jptitle"></h3>
+      </section>
+      <section class="poster-nav">
+        <i
+          class="fa fa-arrow-left fa-2x"
+          id="carousel-left"
+          aria-label="previous slide"
+        ></i>
+        <section class="film-info">
+          <img
+            class="poster-img"
+            src="https://plexcollectionposters.com/images/2019/02/15/totoro-poster87844f2549a310f3.png"
+            alt=""
+          />
+          <div class="details hidden">
+            <ul>
+              <li class="release-date"></li>
+              <li class="director"></li>
+              <li class="producer"></li>
+              <li class="runtime"></li>
+            </ul>
+          </div>
+        </section>
+        <i
+          class="fa fa-arrow-right fa-2x"
+          id="carousel-right"
+          aria-label="next slide"
+        ></i>
+      </section>
+      <div class="description">
+        <p class="description-content"></p>
+      </div>
+    </main>
+    <footer id="footer">
+      <span>
+        Created by
+        <a href="https://github.com/severicus" target="_blank"
+          >Ahmed Alimohamed</a
+        >
+
+        & data provided by
+        <a href="https://github.com/janaipakos/ghibliapi" target="_blank"
+          >Ghibli API</a
+        ></span
+      >
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://use.fontawesome.com/1f3bd03389.js"></script>
+  </body>
+</html>

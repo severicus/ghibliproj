@@ -1,0 +1,218 @@
+body {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #1c0a00;
+  border: none;
+}
+
+#footer {
+  background: #ede6db;
+  color: black;
+  padding: 1rem 0;
+}
+#footer span a {
+  cursor: pointer;
+}
+#footer span a:hover {
+  color: blue;
+}
+
+.navbar img {
+  width: auto;
+  display: block;
+  height: 60px;
+  cursor: pointer;
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar ul li {
+  font-weight: 700;
+  color: white;
+}
+.navbar ul li:hover {
+  color: #e4d1b9;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+main {
+  background: url("https://images.unsplash.com/photo-1611457194403-d3aca4cf9d11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80")
+    center/cover no-repeat;
+  height: 100%;
+  padding: 10rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.poster-img {
+  max-height: 500px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+#jptitle {
+  font-size: 5rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em 0;
+}
+h2 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.poster-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film-info {
+  position: relative;
+}
+
+i {
+  display: inline-block;
+}
+#carousel-left {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#carousel-left:hover {
+  color: #ffeddb;
+  transition: ease-in-out 0.2s;
+  transform: translateY(-0.5rem);
+}
+
+#carousel-right {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#carousel-right:hover {
+  color: #ffeddb;
+  transform: translateY(-0.5rem);
+  transition: ease-in-out 0.2s;
+}
+
+#carousel-left,
+#carousel-right {
+  transform: translateY(0rem);
+  transition: translate 2s;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s;
+}
+.details:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details ul li {
+  margin: 10px 0;
+}
+.details ul {
+  padding: 0.5em;
+}
+
+.description {
+  padding: 1rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.description {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.description-content {
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  /* .poster-nav {
+    flex-flow: row wrap;
+  } */
+  #jptitle {
+    font-size: 3rem;
+  }
+  /* main {
+    height: 100%;
+  } */
+  #title {
+    padding: 10px 0;
+  }
+  .description {
+    width: 100%;
+    padding: 1em;
+  }
+  .poster-img {
+    max-height: 350px;
+  }
+
+  #carousel-left {
+    margin-top: 10px;
+
+    flex-basis: 35%;
+  }
+
+  #carousel-right {
+    order: 3;
+    margin-top: 10px;
+    flex-basis: 35%;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .navbar a {
+    padding-bottom: 1rem;
+  }
+  .title-info {
+    padding-top: 10px;
+  }
+  main {
+    padding: 1em 0;
+  }
+  #footer span {
+    font-size: 0.8rem;
+  }
+}

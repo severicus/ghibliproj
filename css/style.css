@@ -2,6 +2,7 @@ body {
   text-align: center;
   font-family: "Dosis", sans-serif;
   color: white;
+  height: 100%;
 }
 .navbar {
   display: flex;
@@ -47,12 +48,12 @@ h1 {
 main {
   background: url("https://images.unsplash.com/photo-1611457194403-d3aca4cf9d11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80")
     center/cover no-repeat;
-  height: 100%;
-  padding: 10rem;
-  /* display: flex;
+  height: 100vh;
+  padding: 5rem 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; */
+  flex-direction: column;
 }
 .poster-img {
   max-height: 500px;

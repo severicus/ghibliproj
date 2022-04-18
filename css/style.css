@@ -132,7 +132,8 @@ i {
   background: rgba(0, 0, 0, 0.4);
   transition: opacity 0.3s;
 }
-.details:hover {
+.details:hover,
+.details:active {
   opacity: 1;
   transition: opacity 0.3s;
 }

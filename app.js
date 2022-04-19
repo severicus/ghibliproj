@@ -31,7 +31,6 @@ fetch("https://ghibliapi.herokuapp.com/films")
 function prevSlide() {
   ost.play();
   document.querySelector(".title-info").classList.remove("hidden");
-  document.querySelector(".details").classList.remove("hidden");
 
   if (slides === undefined || slides === 0) {
     slides = films.length - 1;
@@ -43,7 +42,6 @@ function prevSlide() {
 function nextSlide() {
   ost.play();
   document.querySelector(".title-info").classList.remove("hidden");
-  document.querySelector(".details").classList.remove("hidden");
   if (slides === undefined || slides === films.length - 1) {
     slides = 0;
   } else {

@@ -40,10 +40,6 @@ function prevSlide() {
   updateSlidePosition();
 }
 
-card.addEventListener("click", show);
-function show() {
-  document.querySelector(".details").classList.toggle("hidden");
-}
 function nextSlide() {
   ost.play();
   document.querySelector(".title-info").classList.remove("hidden");
@@ -56,12 +52,18 @@ function nextSlide() {
   updateSlidePosition();
 }
 
+let button = document.querySelector(".butt");
+button.addEventListener("click", show);
+function show() {
+  document.querySelector(".details").classList.toggle("hidden");
+}
+
 function updateSlidePosition() {
   jpTitle.innerText = films[slides].original_title;
   title.innerText = films[slides].title;
   card.src = films[slides].image;
   document.querySelector(".details").classList.add("hidden");
-
+  button.classList.remove("hidden");
   description.innerText = films[slides].description;
 
   director.innerText = `Director: ${films[slides].director}`;

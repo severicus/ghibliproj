@@ -2,7 +2,6 @@ body {
   text-align: center;
   font-family: "Dosis", sans-serif;
   color: white;
-  height: 100%;
 }
 .navbar {
   display: flex;
@@ -49,6 +48,7 @@ main {
   background: url("https://images.unsplash.com/photo-1611457194403-d3aca4cf9d11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80")
     center/cover no-repeat;
   height: 100%;
+  width: 100%;
   padding: 5rem 0;
   display: flex;
   justify-content: center;
@@ -67,6 +67,21 @@ main {
   margin-bottom: 1rem;
 }
 
+button {
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background: black;
+  color: white;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: #1c0a00;
+  background: #e4d1b9;
+  transition: ease-in-out 0.3s;
+}
 h3 {
   font-size: 1rem;
   max-width: 800px;
@@ -125,17 +140,10 @@ i {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
   height: 99%;
   width: 100%;
   font-size: 1.5rem;
   background: rgba(0, 0, 0, 0.4);
-  transition: opacity 0.3s;
-}
-
-.details:hover,
-.details:active {
-  opacity: 1;
   transition: opacity 0.3s;
 }
 
@@ -166,7 +174,7 @@ i {
 
 @media screen and (max-width: 500px) {
   #jptitle {
-    font-size: 3rem;
+    font-size: 250%;
   }
 
   #title {
@@ -196,6 +204,10 @@ i {
   .navbar {
     flex-direction: column;
     padding: 1rem 0;
+    height: 100px;
+  }
+  #footer {
+    height: 25px;
   }
   .navbar a {
     padding-bottom: 1rem;
@@ -204,7 +216,8 @@ i {
     padding-top: 10px;
   }
   main {
-    padding: 1em 0;
+    padding: 1em 2.4rem;
+    min-height: calc(100vh - 125px);
   }
   #footer span {
     font-size: 0.8rem;

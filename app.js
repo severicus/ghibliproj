@@ -31,7 +31,6 @@ fetch("https://ghibliapi.herokuapp.com/films")
 function prevSlide() {
   ost.play();
   document.querySelector(".title-info").classList.remove("hidden");
-
   if (slides === undefined || slides === 0) {
     slides = films.length - 1;
   } else {
@@ -39,9 +38,15 @@ function prevSlide() {
   }
   updateSlidePosition();
 }
+
+card.addEventListener("click", show);
+function show() {
+  document.querySelector(".details").classList.toggle("hidden");
+}
 function nextSlide() {
   ost.play();
   document.querySelector(".title-info").classList.remove("hidden");
+
   if (slides === undefined || slides === films.length - 1) {
     slides = 0;
   } else {
@@ -54,6 +59,7 @@ function updateSlidePosition() {
   jpTitle.innerText = films[slides].original_title;
   title.innerText = films[slides].title;
   card.src = films[slides].image;
+  document.querySelector(".details").classList.add("hidden");
 
   description.innerText = films[slides].description;
 
